@@ -45,6 +45,12 @@
           <span class="flex items-center"
             ><icon icon="ic:outline-email"></icon>邮箱:</span
           ><span>{{ i.email }}</span>
+
+          <span class="flex items-center"
+            ><icon icon="mdi:resume"></icon>简历:</span
+          ><a :href="i.website" class="text-xs text-sky-400 underline">{{
+            i.website
+          }}</a>
         </div>
         <div class="title">兴趣爱好</div>
         <div class="hobbies">
@@ -236,7 +242,7 @@ img {
       }
       .base-info,
       .contact {
-        @apply gap-2 text-sm;
+        @apply gap-2 text-sm items-center;
         display: grid;
         grid-template-columns: auto 1fr;
       }

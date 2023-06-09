@@ -15,6 +15,7 @@ const resume = {
   wechat: "ACE2487", // 微信
   qq: "707032337", // QQ
   email: "froginwe11@163.com", // 邮箱
+  website: "https://lovehin.github.io/my-resume", // 个人网站
   phone: "18468069469", // 电话
   intro: `具备比较扎实的计算机专业知识，热爱编程，喜欢钻研技术。熟练掌握Python、Golang、JavaScript、Java等编程语言，并且熟悉前端、后端和爬虫开发。
   
