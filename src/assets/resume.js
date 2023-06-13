@@ -17,19 +17,18 @@ const resume = {
   email: "froginwe11@163.com", // 邮箱
   website: "https://lovehin.github.io/my-resume", // 个人网站
   phone: "18468069469", // 电话
-  intro: `具备扎实的编程基础和丰富的项目经验，热爱编程，喜欢钻研技术。
+  intro: `- 具备扎实的编程基础和丰富的项目经验，热爱编程，喜欢钻研技术。
+- 在后端开发方面，我熟练掌握 Python、Java、JS/TS 和 Go语言，以及 Django、Flask、Gin、Spring 和 SpringBoot 等主流后端框架。
   
-  在后端开发方面，我熟练掌握 Python、Java、JS/TS 和 Go语言，以及 Django、Flask、Gin、Spring 和 SpringBoot 等主流后端框架。
-  
-  在前端开发方面，我掌握 Vue、Vue-Router、Vuex 和 Pinia 等前端技术栈，并熟悉 Uniapp、SCSS、PostCSS、WindiCSS、Element-Plus、Ant Design 和 uView 等前端库和框架。
-  
-  在爬虫开发方面，我具备深厚的技能储备，熟练使用 Scrapy、requests-html、XPath 选择器、CSS 选择器等工具和技术，擅长反爬虫策略的研究和应对。
+- 在前端开发方面，我掌握 Vue、Vue-Router、Vuex 和 Pinia 等前端技术栈，并熟悉 Uniapp、SCSS、PostCSS、WindiCSS、Element-Plus、Ant Design 和 uView 等前端库和框架。
 
-  除此之外，我还具备丰富的数据库操作经验，熟悉 MySQL、Sqlite3、Redis、Neo4j、Elasticsearch 和 MongoDB 等数据库技术。
-  
-  在运维方面，我熟悉 Docker、Linux、宝塔和 Nginx 等相关技术。
-  
-  在语言能力方面，我能说流利的粤语和普通话，能听懂大部分昆明话，并具备一定的英语沟通能力。`, // 介绍 markdown
+- 在爬虫开发方面，我具备深厚的技能储备，熟练使用 Scrapy、requests-html、XPath 选择器、CSS 选择器等工具和技术，擅长反爬虫策略的研究和应对。
+
+- 除此之外，我还具备丰富的数据库操作经验，熟悉 MySQL、Sqlite3、Redis、Neo4j、Elasticsearch 和 MongoDB 等数据库技术。
+
+- 在运维方面，我熟悉 Docker、Linux、宝塔和 Nginx 等相关技术。
+
+- 在语言能力方面，我能说流利的粤语和普通话，能听懂大部分昆明话，并具备一定的英语沟通能力。`, // 介绍 markdown
   // 教育经历
   education: {
     school: "广东石油化工学院", // 学校
