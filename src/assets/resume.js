@@ -456,4 +456,7 @@ const resume = {
 resume.categories.forEach((x) => {
   x.skills.sort((a, b) => b.score - a.score);
 });
+resume.experiences.sort(
+  (a, b) => b.start_date.getTime() - a.start_date.getTime()
+);
 export default resume;
