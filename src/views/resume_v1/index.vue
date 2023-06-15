@@ -218,7 +218,13 @@ img {
   -webkit-user-drag: none;
   user-select: none;
 }
+@media print {
+  .page-box {
+    --primary-color: #c2d6ec;
+  }
+}
 .page-box {
+  -webkit-print-color-adjust: exact;
   @apply min-h-100vh flex justify-center items-center text-gray-700;
   --primary-color: #c2d6ec;
   .page {
