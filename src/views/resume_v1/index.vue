@@ -98,7 +98,7 @@
         </div>
         <div>
           <div v-for="x in i.experiences" :key="x.company" class="experience">
-            <div class="text-sm flex justify-between font-bold">
+            <div class="text-sm flex justify-between font-bold field-3">
               <span class="daterange"
                 >{{ formatDate(x.start_date, "Y/M") }} -
                 {{ formatDate(x.end_date, "Y/M") }}</span
@@ -220,7 +220,13 @@ img {
 }
 @media print {
   .page-box {
-    --primary-color: #c2d6ec;
+    .page {
+      box-shadow: unset !important;
+      @apply border border-gray-200;
+      .field-3 {
+        @apply text-xs;
+      }
+    }
   }
 }
 .page-box {
@@ -252,7 +258,7 @@ img {
       .contact {
         @apply gap-2 text-sm items-center;
         display: grid;
-        grid-template-columns: auto 1fr;
+        grid-template-columns: minmax(50px, auto) 1fr;
       }
       .hobbies {
         @apply flex flex-wrap gap-3 text-xs items-center;
