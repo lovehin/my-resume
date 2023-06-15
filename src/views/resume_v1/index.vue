@@ -2,7 +2,9 @@
   <div class="page-box">
     <div class="page">
       <div class="left">
-        <img :src="i.avatar" class="avatar" />
+        <a :href="i.avatar" target="_blank">
+          <img :src="i.avatar" class="avatar" />
+        </a>
         <h1 class="name">{{ i.name }}</h1>
         <span class="position">求职意向: {{ i.title }}</span>
         <div class="title">个人信息</div>

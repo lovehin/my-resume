@@ -1,5 +1,5 @@
 const resume = {
-  avatar: "avatar.png", // 头像
+  avatar: "avatar.jpeg", // 头像
   name: "许立轩", // 姓名
   title: "全栈工程师", // 职位
   married: "已婚", // 婚姻状况
