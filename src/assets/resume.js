@@ -88,6 +88,61 @@ const resume = {
 而后期，我主要担任Vue前端开发的角色，负责招聘、心理健康、青少年服务以及公司官网等多个网站/小程序/App的页面开发。同时，还承担了一部分Spring后端接口的开发工作。`, // 介绍 markdown
     },
   ],
+  // 项目经历
+  projects: [
+    {
+      name: "有标网", // 项目名称
+      role: "爬虫开发", // 角色
+      content: `有标网是一家推送招投标采购信息服务平台，汇聚了全国各地的招标采购信息，并专注于互联网+招投标行业的大数据服务，为客户提供全面的招标、投标、采购等招投标数据。
+      在该项目中，我主要负责爬虫架构、日常开发与维护等工作。由于平台需要大量及时有效的招投标信息，我们的爬虫开发团队至今已经开发了4000+个政府网站爬虫，基本覆盖了全国各地。
+      我们主要使用 Python + Scrapy  爬虫框架 + Selenium + Redis + RabbitMQ + IP  代理池 + Crawlab  分布式部署等开发框架，以确保能够高效地抓取并处理大量的招投标信息。
+      为了保证信息的准确性和可靠性，我们还需要对抓取到的信息进行审核、分类和填充，其中分类算法采用了朴素贝叶斯分类器。`, // 项目介绍
+      achivement: `每日10万+全国公开招投标、政府采购中标及成交信息查询，实现与全国公共资源交易和政府采购网站同步并实时更新`, // [成就]
+      link: "https://51ztb.com/", // [链接]
+      start_date: new Date("2019-04-01"), // 开始时间
+      end_date: new Date("2023-01-01"), // 结束时间
+    },
+    {
+      name: "云南启航就业服务平台", // 项目名称
+      role: "前端/爬虫开发", // 角色
+      content: `这是一个专注于云南地区的招聘服务平台，使用前后端分离开发
+      我主要负责前端(前台/后台/小程序)的部分页面以及招聘网站爬虫的架构设计与开发
+      前端技术栈：Vue 3全家桶、Element-Plus 组件库、Uniapp (小程序)、若依后台框架
+      爬虫技术栈：Python、Scrapy 爬虫框架、Selenium (模拟浏览器访问、突破部分 JS 加密反爬)、MongoDB 用于暂时存储招聘信息、经过审核程序筛选后最终会入库 MySQL、Jenkins+Docker/DockerCompose+scrapyd 部署`, // 项目介绍
+      achivement: `10w用户，1000w访问量，200w职位数据`, // [成就]
+      link: "https://www.qihjob.com/", // [链接]
+      start_date: new Date("2020-01-01"), // 开始时间
+      end_date: new Date("2022-01-01"), // 结束时间
+    },
+    {
+      name: "青春昆明", // 项目名称
+      role: "后端/前端开发", // 角色
+      content: `编写自动检测授章程序：后台可以设置复杂的授章条件，有章与章之间的相互依赖包含、满足特定积分等，程序通过 Canal  订阅 MySQL的 binlog  日志，可以增量得知表的增删改查情况，即可对奖章的满足与否进行快速检查，将自动授章程序与后端代码解耦，可以降低数据库压力
+      前端：负责编写后台管理的部分模块，用的是若依后台那一套，即 Vue2+Vuex+VueRouter+ElementUI`, // 项目介绍
+      achivement: `注册用户已突破21万，发布各类活动114场，访问量达822万人次`, // [成就]
+      link: "https://mobile.88spc.com/", // [链接]
+      start_date: new Date("2021-01-01"), // 开始时间
+      end_date: new Date("2023-01-01"), // 结束时间
+    },
+    {
+      name: "之心云心理健康咨询服务", // 项目名称
+      role: "后端/前端开发", // 角色
+      content: `心理健康咨询服务平台，分为H5/PC端，后台用的是若依的 Golang  前后端分离版本，主要负责部分 Gin  后端接口编写以及 Vue  后台绝大部分的页面以及组件的封装与设计`, // 项目介绍
+      achivement: ``, // [成就]
+      link: "https://zt.zhixinyun.com/login", // [链接]
+      start_date: new Date("2021-01-01"), // 开始时间
+      end_date: new Date("2023-01-01"), // 结束时间
+    },
+    {
+      name: "在线教育网站", // 项目名称
+      role: "后端开发", // 角色
+      content: `MVC项目，主要负责 Django/Flask 后端代码以及与前端人员进行配合页面模版的编写`, // 项目介绍
+      achivement: ``, // [成就]
+      link: "", // [链接]
+      start_date: new Date("2018-06-01"), // 开始时间
+      end_date: new Date("2019-03-01"), // 结束时间
+    },
+  ],
   // 技能类别
   categories: [
     {
@@ -459,4 +514,5 @@ resume.categories.forEach((x) => {
 resume.experiences.sort(
   (a, b) => b.start_date.getTime() - a.start_date.getTime()
 );
+resume.projects.sort((a, b) => b.start_date.getTime() - a.start_date.getTime());
 export default resume;

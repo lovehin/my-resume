@@ -72,6 +72,59 @@
         </div>
         <div v-html="parse_md(i.intro)" class="intro"></div>
         <div class="title">
+          <span>工作经历</span>
+        </div>
+        <div>
+          <div v-for="x in i.experiences" :key="x.company" class="experience">
+            <div class="text-sm flex justify-between font-bold field-3">
+              <span class="daterange"
+                >{{ formatDate(x.start_date, "Y/M") }} -
+                {{ formatDate(x.end_date, "Y/M") }}</span
+              >
+              <span>{{ x.company }}</span>
+              <span>{{ x.title }}</span>
+            </div>
+            <div
+              v-html="parse_md(x.intro)"
+              class="my-3 mb-6 text-sm intro"
+            ></div>
+          </div>
+        </div>
+        <div class="title">
+          <span>项目经历</span>
+        </div>
+        <div>
+          <div v-for="x in i.projects" :key="x.name" class="project">
+            <div class="text-sm flex justify-between font-bold field-3">
+              <span class="daterange"
+                >{{ formatDate(x.start_date, "Y/M") }} -
+                {{ formatDate(x.end_date, "Y/M") }}</span
+              >
+              <span>{{ x.name }}</span>
+              <span>{{ x.role }}</span>
+            </div>
+            <div class="my-3 mb-5 flex flex-col gap-1">
+              <div>
+                <span class="text-sm font-bold">内容: </span>
+                <span class="text-sm ml-1">{{ x.content }}</span>
+              </div>
+              <div v-if="x.achivement">
+                <span class="text-sm font-bold">业绩: </span>
+                <span class="text-sm ml-2">{{ x.achivement }}</span>
+              </div>
+              <div v-if="x.link">
+                <span class="text-sm font-bold">链接: </span>
+                <a
+                  :href="x.link"
+                  class="text-sky-400 underline text-sm ml-2"
+                  target="_blank"
+                  >{{ x.link }}</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="title">
           <span>教育背景</span>
         </div>
         <div class="education flex gap-2 items-center">
@@ -91,25 +144,6 @@
               >{{ formatDate(i.education.start_date, "Y/M") }} -
               {{ formatDate(i.education.end_date, "Y/M") }}</span
             >
-          </div>
-        </div>
-        <div class="title">
-          <span>工作经历</span>
-        </div>
-        <div>
-          <div v-for="x in i.experiences" :key="x.company" class="experience">
-            <div class="text-sm flex justify-between font-bold field-3">
-              <span class="daterange"
-                >{{ formatDate(x.start_date, "Y/M") }} -
-                {{ formatDate(x.end_date, "Y/M") }}</span
-              >
-              <span>{{ x.company }}</span>
-              <span>{{ x.title }}</span>
-            </div>
-            <div
-              v-html="parse_md(x.intro)"
-              class="my-3 mb-6 text-sm intro"
-            ></div>
           </div>
         </div>
         <div class="title flex justify-between items-end">
