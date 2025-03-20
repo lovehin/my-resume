@@ -1,7 +1,7 @@
 const resume = {
   avatar: "avatar.jpeg", // 头像
   name: "许立轩", // 姓名
-  title: "全栈工程师", // 职位
+  title: "前端工程师", // 职位
   married: "已婚", // 婚姻状况
   nation: "汉族", // 民族
   gender: "男", // 性别
@@ -20,7 +20,12 @@ const resume = {
   intro: `- 具备扎实的编程基础和丰富的项目经验，热爱编程，喜欢钻研技术。
 - 在后端开发方面，我熟练掌握 Python、Java、JS/TS 和 Go语言，以及 Django、Flask、Gin、Spring 和 SpringBoot 等主流后端框架。
   
-- 在前端开发方面，我掌握 Vue、Vue-Router、Vuex 和 Pinia 等前端技术栈，并熟悉 Uniapp、SCSS、PostCSS、WindiCSS、Element-Plus、Ant Design 和 uView 等前端库和框架。
+- 在前端开发方面，我掌握 Vue/React 双技术栈：
+  - Vue 生态：Vue-Router、Vuex、Pinia、Uniapp、Element-Plus、uView
+  - React 生态：React-Router、MobX、Redux
+  - 跨平台开发：微信小程序、Uniapp 多端开发
+  - 样式方案：熟悉 SCSS、PostCSS、WindiCSS、Unocss 等现代化 CSS 方案
+  - 工程化：掌握 Webpack 和 Vite 构建工具配置
 
 - 在爬虫开发方面，我具备深厚的技能储备，熟练使用 Scrapy、requests-html、XPath 选择器、CSS 选择器等工具和技术，擅长反爬虫策略的研究和应对。
 
@@ -87,9 +92,56 @@ const resume = {
       
 而后期，我主要担任Vue前端开发的角色，负责招聘、心理健康、青少年服务以及公司官网等多个网站/小程序/App的页面开发。同时，还承担了一部分Spring后端接口的开发工作。`, // 介绍 markdown
     },
+    {
+      company: "昆明埃舍尔科技有限公司", // 公司
+      title: "前端开发工程师", // 职位
+      start_date: new Date("2023-07-01"), // 开始时间
+      end_date: null, // 结束时间
+      intro: `在前期工作中，我主要从事爬虫方面的工作，负责招投标和招聘等信息的抓取，设计Scrapy爬虫群的整体架构，并进行部署和日常维护等工作。
+
+在中间阶段，我曾负责开发招投标专家抽取系统的后端，并参与青春昆明自动授章程序的开发。
+      
+而后期，我主要担任Vue前端开发的角色，负责招聘、心理健康、青少年服务以及公司官网等多个网站/小程序/App的页面开发。同时，还承担了一部分Spring后端接口的开发工作。`, // 介绍 markdown
+    },
   ],
   // 项目经历
   projects: [
+    {
+      name: "摩笔马良", // 项目名称
+      role: "前端开发", // 角色
+      content: `AI艺术创作平台，支持文生图/图生图功能，集成Stable Diffusion等主流模型。采用React+Unocss技术栈实现，网页端：使用React18+TypeScript构建，采用MobX进行状态管理，React-Router实现路由控制，Unocss原子化样式方案。小程序端：基于原生小程序开发，复现了网页端上的全部功能`, // 项目介绍
+      link: "https://maliang.mthreads.com/", // [链接]
+      start_date: new Date("2023-07-01"), // 开始时间
+      end_date: new Date("2023-12-01"), // 结束时间
+    },
+    {
+      name: "2D、3D播报数字人", // 项目名称
+      role: "前端开发", // 角色
+      content: `AIGC口播视频制作，数字人口播视频生成系统，主要功能模块包括，网页端：React18+Redux Toolkit技术栈，核心功能：支持文本/语音输入，自动生成带数字人讲解的视频，提供多模板选择`, // 项目介绍
+      start_date: new Date("2023-09-01"), // 开始时间
+      end_date: new Date("2024-02-01"), // 结束时间
+    },
+    {
+      name: "云牛通", // 项目名称
+      role: "前端开发", // 角色
+      content: `云牛通，作为领先的数字畜牧全产业链平台，致力于利用先进数字化技术助力肉牛产业发展。我们针对传统养殖模式中的痛点问题，提供全面解决方案，推动养殖业的科学化与智慧化进程。在本项目中我主要负责后台管理系统及小程序的功能维护与优化，确保平台高效稳定运行，助力产业链各环节实现智能化升级`, // 项目介绍
+      start_date: new Date("2024-03-01"), // 开始时间
+      end_date: new Date("2025-03-01"), // 结束时间
+    },
+    {
+      name: "销售管理系统", // 项目名称
+      role: "前端开发", // 角色
+      content: `全渠道销售管理解决方案：小程序端：客户拜访签到、订单即时上报。Web后台：Vue2+ElementUI，开发智能业绩分析、客户画像系统，实现与ERP系统数据对接，开发自动化报表生成模块`, // 项目介绍
+      start_date: new Date("2024-06-01"), // 开始时间
+      end_date: new Date("2024-10-01"), // 结束时间
+    },
+    {
+      name: "云花通", // 项目名称
+      role: "前端开发", // 角色
+      content: `云花通旨在为云南花卉产业提供便捷、安全、高效的支付结算服务，助力花卉产业链的转型升级。在此项目中，我主要负责管理后台以及小程序的功能维护`, // 项目介绍
+      start_date: new Date("2024-03-01"), // 开始时间
+      end_date: new Date("2025-03-01"), // 结束时间
+    },
     {
       name: "有标网", // 项目名称
       role: "爬虫开发", // 角色
@@ -257,6 +309,31 @@ const resume = {
           value: "Bootstrap",
           score: 2,
           desc: "Twitter推出的Web前端开发框架，提供了一系列CSS和JavaScript的组件和工具",
+        },
+        {
+          value: "React",
+          score: 4,
+          desc: "Facebook推出的前端框架，掌握基础开发能力"
+        },
+        {
+          value: "React-Router",
+          score: 4,
+          desc: "React的官方路由解决方案"
+        },
+        {
+          value: "MobX",
+          score: 4,
+          desc: "React状态管理库"
+        },
+        {
+          value: "Redux",
+          score: 3,
+          desc: "JavaScript应用状态管理容器"
+        },
+        {
+          value: "Unocss",
+          score: 4,
+          desc: "原子化CSS引擎，与WindiCSS一脉相承"
         },
       ],
     },
@@ -514,5 +591,5 @@ resume.categories.forEach((x) => {
 resume.experiences.sort(
   (a, b) => b.start_date.getTime() - a.start_date.getTime()
 );
-resume.projects.sort((a, b) => b.start_date.getTime() - a.start_date.getTime());
+resume.projects.sort((a, b) => b.end_date.getTime() - a.end_date.getTime());
 export default resume;
