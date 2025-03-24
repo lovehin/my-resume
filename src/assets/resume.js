@@ -247,11 +247,6 @@ const resume = {
           desc: "Vue的新一代状态管理库，提供更好的类型检查和更好的性能",
         },
         {
-          value: "React",
-          score: 1,
-          desc: "Facebook推出的前端框架，在业界有广泛应用",
-        },
-        {
           value: "Uniapp",
           score: 4,
           desc: "基于Vue.js的跨平台开发框架，可同时开发多个平台的应用",
