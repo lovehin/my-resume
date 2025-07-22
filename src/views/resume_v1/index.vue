@@ -6,7 +6,7 @@
           <img :src="i.avatar" class="avatar" />
         </a>
         <h1 class="name">{{ i.name }}</h1>
-        <span class="position">求职意向: {{ i.title }}</span>
+        <!-- <span class="position">求职意向: {{ i.title }}</span> -->
         <div class="title">个人信息</div>
         <div class="base-info">
           <span>性 别:</span><span>{{ i.gender }}</span>
