@@ -1,5 +1,5 @@
 const resume = {
-  avatar: "avatar.jpeg", // 头像
+  avatar: "avatar.png", // 头像
   name: "许立轩", // 姓名
   title: "全栈工程师", // 职位
   married: "已婚", // 婚姻状况
@@ -304,27 +304,27 @@ const resume = {
         {
           value: "React",
           score: 4,
-          desc: "Facebook推出的前端框架，掌握基础开发能力"
+          desc: "Facebook推出的前端框架，掌握基础开发能力",
         },
         {
           value: "React-Router",
           score: 4,
-          desc: "React的官方路由解决方案"
+          desc: "React的官方路由解决方案",
         },
         {
           value: "MobX",
           score: 4,
-          desc: "React状态管理库"
+          desc: "React状态管理库",
         },
         {
           value: "Redux",
           score: 3,
-          desc: "JavaScript应用状态管理容器"
+          desc: "JavaScript应用状态管理容器",
         },
         {
           value: "Unocss",
           score: 4,
-          desc: "原子化CSS引擎，与WindiCSS一脉相承"
+          desc: "原子化CSS引擎，与WindiCSS一脉相承",
         },
       ],
     },

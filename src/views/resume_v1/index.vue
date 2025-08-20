@@ -112,7 +112,7 @@
                 <span class="text-sm font-bold">业绩: </span>
                 <span class="text-sm ml-2">{{ x.achivement }}</span>
               </div>
-              <div v-if="x.link">
+              <!-- <div v-if="x.link">
                 <span class="text-sm font-bold">链接: </span>
                 <a
                   :href="x.link"
@@ -120,7 +120,7 @@
                   target="_blank"
                   >{{ x.link }}</a
                 >
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
