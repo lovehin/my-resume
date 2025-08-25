@@ -100,6 +100,65 @@ const resume = {
       intro: `担任前端开发工程师，主要负责多个数字化平台的前端开发与维护工作。这些平台涵盖了畜牧、花卉、销售管理、数字人视频生成和AI艺术创作等多个行业领域。运用React、Vue、TypeScript等技术栈，参与开发了后台管理系统、小程序、Web应用等功能模块，确保平台的高效稳定运行，推动了产业链的智能化升级。`, // 介绍 markdown
     },
   ],
+  // 个人项目
+  personal_projects: [
+    {
+      name: "基金分析可视化",
+      content: `基于Python Django与Vue.js构建基金分析平台，集成Element-Plus设计前端界面。实现用户注册登录及后台权限管理，支持按类型、业绩、主题筛选基金，提供关键词搜索功能。展示基金详情（净值、估值、收益分析、基金公司信息），集成净值与收益走势对比图表（含同类均值与沪深300），支持历史净值查询与多基金自选对比。通过爬虫技术实时抓取天天基金、东方财富数据接口。`,
+      link: "https://www.bilibili.com/video/BV1PBeWz5ELB",
+      rank: 9,
+    },
+    {
+      name: "协同过滤推荐购物系统",
+      content: `基于Python Django与Vue.js构建，集成协同过滤推荐算法，实现个性化商品推荐。支持关键词、分类搜索与筛选，提供用户中心（信息管理、密码修改）、购物车（一键清空/结算）、历史订单等功能。商品详情页展示基本信息及相似商品推荐，支持加入购物车。后台使用Django-SimpleUI管理商品与订单数据。`,
+      link: "https://www.bilibili.com/video/BV1PBeWz5ELB?p=2",
+    },
+    {
+      name: "图书推荐系统",
+      content: `基于Spark和协同过滤算法，设计并实现了一套个性化图书推荐系统。系统采用Scrapy爬取豆瓣读书数据，通过Django和Vue构建前后端服务，集成用户登录注册、图书查询筛选、分类浏览、高分书榜及分页展示等功能。
+核心推荐模块包括：基于用户的协同过滤推荐（首页生成10本个性化图书），以及基于物品的协同过滤推荐（在图书详情页推荐5本相关书籍）。管理员支持后台数据管理，保障推荐内容的质量与多样性。`,
+      link: "https://www.bilibili.com/video/BV1PBeWz5ELB?p=3",
+    },
+    {
+      name: "电影票房分析预测",
+      content: `基于Python和机器学习技术，构建了一套电影票房数据分析与预测系统。集成Scrapy爬虫定时获取2015–2025年共4400部电影数据，依托Django和Vue+Element-Plus实现前后端功能，MySQL作为数据支撑。
+系统涵盖票房排行、多条件电影库查询、Echarts可视化（类型占比、票房趋势、地域分布等），并运用Scikit-learn线性回归模型预测未来五年票房趋势。后台支持数据管理，为电影分析提供多维度决策支持。`,
+      link: "https://www.bilibili.com/video/BV1PBeWz5ELB?p=4",
+    },
+    {
+      name: "空气污染物数据分析",
+      content: `基于Python和Spark技术栈，设计并实现了全国城市空气质量数据分析系统。利用requests_html定时爬取实时空气质量数据，通过Django和Vue+Element-Plus构建前后端，集成Echarts与百度地图API实现数据大屏可视化，展示AQI地图、指标趋势和监测站点详情。
+系统运用PySpark对历史数据进行分析，预测未来7日空气质量，并提供后台管理功能。`,
+      link: "https://www.bilibili.com/video/BV1PBeWz5ELB?p=5",
+    },
+    //     {
+    //       name: "LLM网页对话系统",
+    //       content: `基于大语言模型，设计并实现了一款智能对话系统，支持多轮自然对话，并集成文生图与联网搜索特色功能。利用Flask和SQLAlchemy搭建后端服务，通过Vue.js+Element UI构建前端交互界面。
+    // 系统支持模型微调、附件处理及历史记录保存，显著提升了在特定领域的应答准确性和用户体验。`,
+    //       link: "https://www.bilibili.com/video/BV1PBeWz5ELB?p=6",
+    //       rank: 10,
+    //     },
+    {
+      name: "SSM小说阅读网站",
+      content: `基于SSM与Vue.js，开发了一款前后端分离的小说在线阅读系统。后端使用Spring Boot+MyBatis Plus，前端采用Vue 3组合式API与Element Plus，并通过Python+Scrapy自动抓取纵横小说网站内容以丰富资源。
+系统支持多角色权限控制：游客可浏览作品，读者可阅读、评论与收藏，作者可管理发布小说，管理员可管理用户、内容及评论。实现了完整的在线阅读与管理功能，界面简洁、易于扩展维护。`,
+      link: "https://www.bilibili.com/video/BV1PBeWz5ELB?p=7",
+      rank: 8,
+    },
+    {
+      name: "汽车数据分析",
+      content: `基于Python Django与Vue3，开发了一款汽车信息数据展示与查询系统。通过Scrapy爬取懂车帝与车质网数据并存储于MySQL，实现多维度车系筛选、销量/差评榜单、降价与品牌分布等ECharts可视化分析。
+系统支持车系详情雷达图评分、投诉走势与销量图表展示，提供用户登录注册及后台数据管理功能，集数据采集、处理、可视化及管理于一体，为汽车消费提供决策支持。`,
+      link: "https://www.bilibili.com/video/BV1PBeWz5ELB?p=8",
+      rank: 10,
+    },
+    {
+      name: "游戏数据分析",
+      content: `基于 Spark 和 Django，开发了一套 TapTap 游戏数据分析平台。利用 Scrapy 爬取全站游戏数据，通过 Spark 处理分析，并借助 Vue3 + Element Plus + ECharts 实现前端数据可视化与交互。
+系统支持个性化游戏推荐（基于协同过滤算法）、多维度搜索与分类浏览、游戏热度与评分走势分析，并提供丰富的图表展示。集数据采集、处理、可视化及管理于一体，为游戏爱好者提供全面的数据洞察和推荐服务。`,
+      link: "https://www.bilibili.com/video/BV1PBeWz5ELB?p=9",
+    },
+  ],
   // 项目经历
   projects: [
     {
@@ -583,4 +642,5 @@ resume.experiences.sort(
   (a, b) => b.start_date.getTime() - a.start_date.getTime()
 );
 resume.projects.sort((a, b) => b.end_date.getTime() - a.end_date.getTime());
+resume.personal_projects.sort((a, b) => (b.rank || 0) - (a.rank || 0));
 export default resume;
