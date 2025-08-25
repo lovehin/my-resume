@@ -131,13 +131,13 @@ const resume = {
 系统运用PySpark对历史数据进行分析，预测未来7日空气质量，并提供后台管理功能。`,
       link: "https://www.bilibili.com/video/BV1PBeWz5ELB?p=5",
     },
-    //     {
-    //       name: "LLM网页对话系统",
-    //       content: `基于大语言模型，设计并实现了一款智能对话系统，支持多轮自然对话，并集成文生图与联网搜索特色功能。利用Flask和SQLAlchemy搭建后端服务，通过Vue.js+Element UI构建前端交互界面。
-    // 系统支持模型微调、附件处理及历史记录保存，显著提升了在特定领域的应答准确性和用户体验。`,
-    //       link: "https://www.bilibili.com/video/BV1PBeWz5ELB?p=6",
-    //       rank: 10,
-    //     },
+    {
+      name: "LLM网页对话系统",
+      content: `基于大语言模型，设计并实现了一款智能对话系统，支持多轮自然对话，并集成文生图与联网搜索特色功能。利用Flask和SQLAlchemy搭建后端服务，通过Vue.js+Element UI构建前端交互界面。
+    系统支持模型微调、附件处理及历史记录保存，显著提升了在特定领域的应答准确性和用户体验。`,
+      link: "https://www.bilibili.com/video/BV1PBeWz5ELB?p=6",
+      rank: 10,
+    },
     {
       name: "SSM小说阅读网站",
       content: `基于SSM与Vue.js，开发了一款前后端分离的小说在线阅读系统。后端使用Spring Boot+MyBatis Plus，前端采用Vue 3组合式API与Element Plus，并通过Python+Scrapy自动抓取纵横小说网站内容以丰富资源。

@@ -91,7 +91,11 @@
           </div>
         </div>
         <div class="title">
-          <span>兴趣项目</span>
+          <span>个人兴趣项目</span>
+          <img
+            src="/qrcode.png"
+            class="absolute w-50px h-50px right-0 bottom-0"
+          />
         </div>
         <div>
           <div v-for="x in i.personal_projects" :key="x.name" class="project">
